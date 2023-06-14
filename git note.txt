@@ -84,3 +84,16 @@ git diff --staged
 
 輸出異動文字檔
 git diff>page.diff
+
+列出所有的歷史紀錄
+git reflog
+
+檔案移動到暫存區
+git reset --soft
+
+版本變更指定commit並會異動程式 *會變更程式
+git reset --hard<>
+
+git reset HEAD~5
+
+git reset <commit>
