@@ -47,3 +47,6 @@ git commit -m "create all files"
 2.一個階段結束
 3.一天至少一次
 ====================================
+
+git commit -a -m "update a.html2"
+
