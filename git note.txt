@@ -48,5 +48,8 @@ git commit -m "create all files"
 3.一天至少一次
 ====================================
 
+一次執行add&commit 從工作區移動至本機儲存區
+使用前提是檔案曾經被git控管
 git commit -a -m "update a.html2"
+git commit -am "update a.html2"
 
