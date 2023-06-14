@@ -53,4 +53,34 @@ git commit -m "create all files"
 git commit -a -m "update a.html2"
 git commit -am "update a.html2"
 
+修改最近一次commit內容
+git commit --amend -m "test"
 
+離開vim文字編輯器
+:q 離開
+
+查詢打過的指令
+git log --oneline
+
+把最近一次異動紀錄新增到最近一次commit
+git commit --amend --no-edit
+
+修改檔案後"還沒有"加到暫存區前 會復原異動前狀態
+git restore b.html
+
+修改檔案後已經加入到暫存區 會移動至工作區並保留異動的狀態 二次確認
+git restore --staged a.html
+
+把檔案設成不給git控管
+git rm --cached
+
+通常不想被控管 就紀錄在.gitignore
+
+工作區異動做比較
+git diff
+
+暫存區跟本機儲存區比較
+git diff --staged
+
+輸出異動文字檔
+git diff>page.diff
