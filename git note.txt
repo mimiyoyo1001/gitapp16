@@ -1,0 +1,49 @@
+檢查 git版本
+git --version
+
+檢查git基本設定
+git config --list
+
+git config --global user.name "Felix"
+
+git config --global user.email "mimiyoyo1001@gmail.com"
+
+切換目錄
+cd D:
+
+ls -al
+
+cd GITAPP
+
+回上一個目錄
+cd.. 
+
+此資料夾受git版本控制 生成.git隱藏資料夾
+git init
+
+檢視目前此資料夾git狀態
+git status
+
+把此檔案受git控管 第一次加入的話狀態會改變暫存區狀態
+git add <file>
+git add *.html
+git add --all
+git add .
+
+檔案改變到本機儲存區
+git commit -m "init commit"
+
+所有工作檔案到本機儲存區
+git commit -m "create all files"
+
+====================================
+#為什麼兩次
+1.類似倉庫倉管的功能
+2.逐筆確認
+3.code review
+
+什麼時候commit
+1.沒有一定
+2.一個階段結束
+3.一天至少一次
+====================================
