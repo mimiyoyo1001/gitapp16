@@ -113,7 +113,45 @@ git checkout -b
 git switch -c
 
 合併分支
+先切換到你要合併的主分支
 git merge dog
 
 砍掉分支
 git branch -d dog
+
+分支改名字
+git branch -M main
+
+取名字
+git remote add origin https://github.com/mimiyoyo1001/gitapp16.git
+
+檢視遠端狀態
+git remote -v
+
+選擇要push什麼分支
+git push origin main
+
+拉專案下來
+git pull origin main
+
+建議每個專案都要有README.md 及 .gitignore
+README.md是簡介你專案的文件
+.gitignore那些檔案是非必要不須git控管
+例如個人開發工具設定或環境設定等
+
+1.設定遠端儲存區金鑰
+1-1.github生成金鑰
+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
+1-2.重新設定遠端儲存區(有金鑰版)
+git remote set-url origin https://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@github.com/mimiyoyo1001/gitapp16.git
+
+2.github pull request PR
+2-1.fork 原始專案
+2-2.git clone url
+2-3.修改你的分支下的檔案
+	git commit -am "message"
+2-4.push回你的檔案
+	git push origin main
+5.發PR給原專案作者
+6.原作確認PR
+	
