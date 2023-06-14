@@ -97,3 +97,23 @@ git reset --hard<>
 git reset HEAD~5
 
 git reset <commit>
+
+檢視分支
+git branch
+
+創建分支
+git branch cat
+
+要去哪個分支
+git checkout cat
+git switch cat
+
+建立並同時切換
+git checkout -b
+git switch -c
+
+合併分支
+git merge dog
+
+砍掉分支
+git branch -d dog
